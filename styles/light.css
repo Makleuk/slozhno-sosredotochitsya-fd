@@ -1,10 +1,22 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+.theme-light {
+  --background-image: url(../images/cover-image-light.png);
+  --accent-color: #FF8DCB;
+  --title-color: #FFC2E6;
+  --text-accent-color: #353430;
+  --content-text-color: #353430;
+  --background-color: #FFF1F7;
+  --button-color: #353430;
+  --button-color-hover: rgba(50, 49, 45, 0.4);
+  --content-title-color: #353430;
+  --gallery-title-color: #353430;
+}
+
+.theme-light .lamp {
+  display: none;
+}
+
 @media (prefers-color-scheme: light) {
-  :root {
+  :root:not(.theme-dark):not(.theme-light) {
     --background-image: url(../images/cover-image-light.png);
     --accent-color: #FF8DCB;
     --title-color: #FFC2E6;
@@ -13,16 +25,11 @@
     --background-color: #FFF1F7;
     --button-color: #353430;
     --button-color-hover: rgba(50, 49, 45, 0.4);
-    --content-title-color:  #353430;
+    --content-title-color: #353430;
+    --gallery-title-color: #353430;
   }
-}
-
-.theme-light .lamp {
-  display: none;
-}
-
-@media (prefers-color-scheme: light) {
-  :root:not(.theme-dark) .lamp {
+  
+  :root:not(.theme-dark):not(.theme-light) .lamp {
     display: none;
   }
 }
