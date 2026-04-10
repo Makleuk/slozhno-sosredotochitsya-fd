@@ -1,7 +1,6 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   font-family: IBM Plex mono, sans-serif;
   background-image: var(--background-image);
   background-position: center;
@@ -52,11 +51,12 @@
   justify-self: end;
   align-self: center;
   grid-row: 1;
+  margin-right: 10px;
 }
 
 .header__theme-menu-list {
   display: flex;
-  gap: 11.5px;
+  gap: 10px;
   flex-direction: column;
   list-style: none;
 }
@@ -67,6 +67,9 @@
   font-size: 18px;
   font-weight: 400;
   border: 1px solid transparent;
+  height: 26px;
+  padding: 0 13px;
+  line-height: 24px;
 }
 
 .header__theme-menu-button:hover {
@@ -106,11 +109,14 @@
   line-height: 23.4px;
   padding-left: 10px;
   padding-right: 10px;
+  width: 355px;
+  margin-bottom: 0;
 }
 
 .title-decor {
   background-color: var(--accent-color);
   color: var(--text-accent-color);
+  padding: 0;
 }
 
 .main {
@@ -163,6 +169,7 @@
 }
 
 .content-item__text-link:focus-visible {
+  outline: none;
   border: 1px solid var(--accent-color);
 }
 
@@ -271,6 +278,21 @@
     height: 100vh;
   }
 
+  .header__theme-menu {
+    margin-right: 20px;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .header__theme-menu-button {
+    height: auto;
+    padding: 0 25px;
+    line-height: 28px;
+  }
+
   .lamp {
     margin-right: 30px;
   }
@@ -285,6 +307,7 @@
     align-self: center; 
     max-width: 50%;
     padding: 0;
+    width: auto;
   }
 
   .main {
@@ -361,6 +384,7 @@
   .header__theme-menu {
     justify-self: center;
     align-self: start;
+    margin-right: 0;
   }
 
   .header__theme-menu-list {
@@ -369,7 +393,7 @@
   }
 
   .main {
-    gap: 60px;
+    gap: 80px;
   }
   
   .content-section-individ {
@@ -379,7 +403,7 @@
 
   .content-section-individ .content-section__title {
     grid-column: 1 / 4;
-    max-width: 25%;
+    max-width: 30%;
   }
 
   .content-section-individ .content-section__items {
@@ -401,5 +425,15 @@
   .footer {
     min-height: 768px;
     height: 100vh;
+  }
+}
+
+@media (width < 768px) {
+  .content-item__title {
+    margin-bottom: 20px;
+  }
+  
+  .content-item__title:last-child {
+    margin-bottom: 0;
   }
 }
