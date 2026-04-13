@@ -184,7 +184,7 @@
   line-height: 23.4px;
   letter-spacing: 0;
   color: var(--gallery-title-color);
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .gallery__items {
@@ -278,7 +278,7 @@
   }
 
   .header__theme-menu {
-    margin-right: 20px;
+    margin-right: 10px;
   }
 
   .header__theme-menu-list {
@@ -452,15 +452,13 @@
     margin-top: 20px;
   }
 }
-@media (width < 768px) {
-  .header__title {
-    position: relative;
-    top: -60px;
-  }
-}
-
 @media (width >= 1024px) {
   .content-section {
     gap: 20px;
+  }
+}
+@media (width >= 768px) and (width < 1024px) {
+  .header__main_title {
+    margin-bottom: 60px;
   }
 }
