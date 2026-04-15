@@ -9,7 +9,7 @@
   --button-color-hover: rgba(50, 49, 45, 0.4);
   --content-title-color: #353430;
   --gallery-title-color: #353430;
-  --border-color: #F1B2CE;
+  --border-color: #353430;
 }
 
 .theme-light .lamp {
@@ -28,6 +28,7 @@
     --button-color-hover: rgba(50, 49, 45, 0.4);
     --content-title-color: #353430;
     --gallery-title-color: #353430;
+    --border-color: #353430;
   }
   
   :root:not(.theme-dark):not(.theme-light) .lamp {
