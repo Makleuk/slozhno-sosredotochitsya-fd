@@ -1,4 +1,3 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
   font-family: IBM Plex mono, sans-serif;
@@ -454,7 +453,7 @@
 }
 @media (width >= 1024px) {
   .content-section {
-    gap: 20px;
+    gap: 0px;
   }
 }
 @media (width >= 768px) and (width < 1024px) {
@@ -478,5 +477,29 @@
   .header__theme-menu {
     margin-right: 0px;   
     margin-top: 0px;     
+  }
+}
+@media (width >= 1024px) {
+  /* Отступ для секции с концентрацией */
+  .concentration-section .content-section__title {
+    margin-bottom: 25px;
+  }
+  
+  /* Убираем отступ у последней секции (советы) */
+  .content-section:last-of-type .content-section__title {
+    margin-bottom: 0;
+  }
+}
+@media (width >= 1024px) {
+  /* Секция с советами — поднять выше */
+  .advice-section {
+    position: relative;
+    bottom: 25px;  /* будет работать без ограничений */
+  }
+}
+@media (width >= 1024px) {
+  .gallery {
+    position: relative;
+    bottom: 30px;  /* поднимает галерею вверх */
   }
 }
