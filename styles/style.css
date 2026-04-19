@@ -480,12 +480,10 @@
   }
 }
 @media (width >= 1024px) {
-  /* Отступ для секции с концентрацией */
   .concentration-section .content-section__title {
     margin-bottom: 25px;
   }
   
-  /* Убираем отступ у последней секции (советы) */
   .content-section:last-of-type .content-section__title {
     margin-bottom: 0;
   }
@@ -497,6 +495,17 @@
 }
 @media (width >= 1024px) {
   .main {
-    gap: 70px;
+    gap: 67px;;
   }
 }
+@media (width >= 1024px) {
+  .content-section:first-of-type {
+    margin-bottom: 7px;
+  }
+}
+@media (width >= 1024px) {
+  .advice-section {
+    margin-bottom: 0;
+  }
+}
+/* все исправил самый близкий вариант не знаю что еще можно поменять пробовал уже все возможнгые вариации значений расхождение в пару пикселей не понимаю как исправить*/
