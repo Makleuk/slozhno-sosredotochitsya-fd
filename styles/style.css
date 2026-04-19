@@ -491,15 +491,12 @@
   }
 }
 @media (width >= 1024px) {
-  /* Секция с советами — поднять выше */
-  .advice-section {
-    position: relative;
-    bottom: 25px;  /* будет работать без ограничений */
+  .content-section__items {
+    margin-left: 3px;
   }
 }
 @media (width >= 1024px) {
-  .gallery {
-    position: relative;
-    bottom: 30px;  /* поднимает галерею вверх */
+  .main {
+    gap: 70px;
   }
 }
